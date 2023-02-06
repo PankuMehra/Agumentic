@@ -13,7 +13,7 @@ const Password = () => {
   const enterUser = (e) => {
     e.preventDefault();
     if (currentUser.data.password == newPassword) {
-      navigate("/");
+      navigate("/home");
     } else {
       console.log("not logged in");
     }

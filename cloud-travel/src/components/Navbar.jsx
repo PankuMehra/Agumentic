@@ -1,5 +1,6 @@
 import { Box, Button } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -39,15 +40,22 @@ const Navbar = () => {
         alignItems="center"
         width={"15%"}
       >
-        <Button style={{ border: "1px solid #6246e5", color:"#6246e5" }} variant="outlined">
-          Sign up
-        </Button>
-        <Button
-          style={{ backgroundColor: "#6246e5", border: "1px solid #6246e5" }}
-          variant="contained"
-        >
-          Login
-        </Button>
+        <Link to="/login">
+          <Button
+            style={{ border: "1px solid #6246e5", color: "#6246e5" }}
+            variant="outlined"
+          >
+            Sign up
+          </Button>
+        </Link>
+        <Link to="/login">
+          <Button
+            style={{ backgroundColor: "#6246e5", border: "1px solid #6246e5" }}
+            variant="contained"
+          >
+            Login
+          </Button>
+        </Link>
       </Box>
     </Box>
   );
